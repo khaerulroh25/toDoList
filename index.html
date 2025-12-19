@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>To Do List App</title>
+    <link rel="stylesheet" href="asset/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <section>
+        <h2>Profile</h2>
+        <p><strong>Nama:</strong> Muhammad Khaerul Rohman</p>
+        <p><strong>Jabatan:</strong> Student</p>
+      </section>
+
+      <hr />
+      <section>
+        <p id="time">Hari, Tanggal</p>
+      </section>
+
+      <hr />
+      <section>
+        <h3>Tambah To Do</h3>
+
+        <textarea
+          id="todo-input"
+          placeholder="Tulis tugas di sini..."
+        ></textarea>
+
+        <select id="priority">
+          <option value="">Pilih Prioritas</option>
+          <option value="low">Low</option>
+          <option value="medium">Medium</option>
+          <option value="high">High</option>
+        </select>
+
+        <button id="submit-btn">Submit</button>
+      </section>
+
+      <hr />
+      <section>
+        <h3>To Do</h3>
+        <div class="todo-list" id="todo-container">
+          <p class="empty-text" id="todo-empty">Belum ada tugas</p>
+        </div>
+      </section>
+
+      <hr />
+      <section>
+        <h3>Done</h3>
+        <div class="done-list" id="done-container">
+          <p class="empty-text" id="done-empty">Belum ada tugas yang selesai</p>
+        </div>
+      </section>
+
+      <hr />
+      <button class="delete-all" id="delete-all">Hapus</button>
+    </div>
+
+    <script src="asset/app.js"></script>
+  </body>
+</html>
