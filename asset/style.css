@@ -11,7 +11,7 @@ body {
 
 /* container */
 .container {
-  max-width: 480px;
+  width: 100%;
   margin: auto;
   background: #ffffff;
   padding: 16px;
@@ -122,4 +122,11 @@ button {
   background: red;
   color: white;
   padding: 10px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+    padding: 24px;
+  }
 }
